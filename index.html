@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" type="icon" href="icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kundana Mandapaka</title>
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li><a href="#" class="sidebarClose" onclick="sidebarclose()"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about_header" target="_blank">About</a></li>
+                <li><a href="#education_header" target="_blank">Education</a></li>
+                <li><a href="#skills_header" target="_blank">Skills</a></li>
+                <li><a href="#projects_header" target="_blank">Projects</a></li>
+                <li><a href="#contact_header" target="_blank">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#" class="mobileoff">Home</a></li>
+                <li><a href="#about_header" class="mobileoff">About</a></li>
+                <li><a href="#education_header" class="mobileoff">Education</a></li>
+                <li><a href="#skills_header" class="mobileoff">Skills</a></li>
+                <li><a href="#projects_header" class="mobileoff">Projects</a></li>
+                <li><a href="#contact_header" class="mobileoff">Contact</a></li>
+                <li><a href="#" class="sidebaropen" onclick="sidebaropen()"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="home"> <!-- It should be a flex -->
+
+        <div class="name_home" id="name_home"> <!--It should be a grid-->
+            <p class="name"><strong>Kundana 👋 <br>
+                    Mandapaka</strong></p>
+            <div class="desc">
+                <p>I am a <b>Data Analyst</b>, passionate about uncovering insights from data <br>and
+                    dedicated
+                    to
+                    continuous learning. I bring fresh perspectives and <br>a strong foundation
+                    in analytical techniques</p>
+            </div>
+
+            <button id="scrollButton" onclick="contactheader()">
+                <span> Contact Me</span>
+            </button>
+        </div>
+
+        <div class="image"> <!--It should be a grid-->
+            <img class="home_image" src="Kundana.jpg" alt="">
+
+        </div>
+
+    </div>
+
+    <div class="about">
+
+        <div class="about_header" id="about_header"><!-- it is a flex-->
+        </div>
+
+        <div class="title">
+            <strong>About Me</strong>
+        </div>
+
+        <div class="about_body">
+
+
+            <div class="about_image">
+                <img id="about_image" src="Kundana.jpg" alt="kundanaimage">
+            </div>
+
+            <div class="details">
+                <p>A Data Analyst and Business Consultant with a background in Computer Science. Leveraging 2.5 years of
+                    experience in the industry, I bring a unique perspective to problem-solving and data analysis. Adept
+                    in
+                    SQL, Python, and data visualization tools, I excel in optimizing databases and designing insightful
+                    reports, as showcased in projects. With a keen eye for detail and strong interpersonal skills
+                    developed
+                    in the IT industry, I am an effective team player and negotiator. Eager to contribute my skills to
+                    business analysis, I am passionate about continuous learning and making meaningful
+                    contributions to any team.
+                </p>
+
+                <div class="card">
+                    <a class="social-link1" href="https://github.com/Kundana9368" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="1em" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="social-link2" href="http://www.linkedin.com/in/kundanamandapaka" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#fff">
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                            </path>
+                        </svg> </a>
+
+                    <a class="social-link4" href="https://leetcode.com/u/kundanamandapaka/" target="_blank">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                            id="Leetcode">
+                            <path
+                                d="M22,14.355c0-0.742-0.564-1.346-1.26-1.346H10.676c-0.696,0-1.26,0.604-1.26,1.346s0.563,1.346,1.26,1.346H20.74C21.436,15.702,22,15.098,22,14.355z"
+                                fill="#ffffff" class="color000000 svgShape"></path>
+                            <path
+                                d="M3.482,18.187l4.313,4.361C8.768,23.527,10.113,24,11.598,24c1.485,0,2.83-0.512,3.805-1.494l2.588-2.637c0.51-0.514,0.492-1.365-0.039-1.9c-0.531-0.535-1.375-0.553-1.884-0.039l-2.676,2.607c-0.462,0.467-1.102,0.662-1.809,0.662s-1.346-0.195-1.81-0.662l-4.298-4.363c-0.463-0.467-0.696-1.15-0.696-1.863c0-0.713,0.233-1.357,0.696-1.824l4.285-4.38c0.463-0.467,1.116-0.645,1.822-0.645s1.346,0.195,1.809,0.662l2.676,2.606c0.51,0.515,1.354,0.497,1.885-0.038c0.531-0.536,0.549-1.387,0.039-1.901l-2.588-2.636c-0.649-0.646-1.471-1.116-2.392-1.33l-0.034-0.007l2.447-2.503c0.512-0.514,0.494-1.366-0.037-1.901c-0.531-0.535-1.376-0.552-1.887-0.038L3.482,10.476C2.509,11.458,2,12.813,2,14.311C2,15.809,2.509,17.207,3.482,18.187z"
+                                fill="#ffffff" class="color000000 svgShape"></path>
+                        </svg>
+
+                    </a>
+
+                    <a class="social-link5" href="https://public.tableau.com/app/profile/kundana.mandapaka/vizzes"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 -2.5 256 256"
+                            id="tableau">
+                            <path fill="#ffffff"
+                                d="M123.929 11.593v11.641h-20.82v7.571h20.82v23.186h8.139V30.805h21.341v-7.571h-21.341V0h-8.139z"
+                                class="color7099a6 svgShape"></path>
+                            <path fill="#8b8b8b"
+                                d="M55.884 41.121v16.893H24.369v10.599h31.515v34.307h11.688V68.613H99.56V58.014H67.572V24.228H55.884z"
+                                class="coloreb912c svgShape"></path>
+                            <path fill="#7a7a7a"
+                                d="M187.953 41.121v16.893h-31.515v11.12h31.515v33.786h12.161V69.134h31.514v-11.12h-31.514V24.228h-12.161z"
+                                class="color59879b svgShape"></path>
+                            <path fill="#8a8a8a"
+                                d="M120.901 98.661v18.928H85.837v14.101h35.064v37.855h14.196V131.69h35.063v-14.101h-35.063V79.733h-14.196z"
+                                class="colore8762c svgShape"></path>
+                            <path fill="#767676"
+                                d="M224.01 108.219v11.878h-21.341v9.605h21.341v23.707h10.647v-23.707h21.341v-9.605h-21.341V96.39H224.01z"
+                                class="color5b6591 svgShape"></path>
+                            <path fill="#ffffff"
+                                d="M20.821 109.26v11.357H0v8.044h20.821v22.714h8.138v-22.714l21.341-.757v-7.287H28.959V97.904h-8.138z"
+                                class="color7099a6 svgShape"></path>
+                            <path fill="#737373"
+                                d="M55.884 162.731v16.893H24.369v11.12h31.515v33.786h12.161v-33.786H99.56v-11.12H68.045v-33.786H55.884z"
+                                class="colorc72035 svgShape"></path>
+                            <path fill="#4e4e4e"
+                                d="M187.953 162.731v16.893h-31.515v10.6h31.515v34.306h12.161v-34.306h31.514v-10.6h-31.514v-33.786h-12.161z"
+                                class="color1f447e svgShape"></path>
+                            <path fill="#767676"
+                                d="M122.936 205.65v11.83h-21.341v9.606h21.341v23.707h10.647v-23.707h21.341v-9.606h-21.341v-23.707h-10.647z"
+                                class="color5b6591 svgShape"></path>
+                        </svg> </a>
+
+                    <a href="Kundana_Mandapaka_Resume.pdf" class="social-link3" download="Kundana_Mandapaka_Resume.pdf"
+                        id="downloadLink">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="education">
+        <div class="education_header" id="education_header"><!-- it is a flex-->
+        </div>
+
+        <div class="education_title">
+            <strong>Education</strong>
+            <strong>Experience</strong>
+        </div>
+
+        <div class="education_body">
+            <div class="sections">
+                <div class="content">
+
+                    <div class="data">
+                        <div>
+                            <h4 class="university_title">
+                                University of South Florida</h4>
+                            <span class="subtitle">Masters in computer science
+                            </span>
+
+                            <div class="calender">
+                                <i class="calender-alt">Aug 2022 – May 2024</i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="rounder"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <div class="data">
+                        <div></div>
+                        <div>
+                            <span class="rounder"></span>
+                            <span class="line"></span>
+                        </div>
+
+
+                        <div>
+                            <h4 class="university_title">
+                                International MUN Intern</h4>
+                            <span class="subtitle">Business Data Analyst
+                            </span>
+
+                            <div class="calender">
+                                <i class="calender-alt">Jun 2021 – Jul 2022</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data">
+                        <div></div>
+                        <div>
+                            <span class="rounder"></span>
+                            <span class="line"></span>
+                        </div>
+
+
+                        <div>
+                            <h4 class="university_title">
+                                Art For Humanity Foundation Intern</h4>
+                            <span class="subtitle">Data Analyst
+                            </span>
+
+                            <div class="calender">
+                                <i class="calender-alt">Feb 2020 – May 2021</i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data">
+                        <div>
+                            <h4 class="university_title">
+                                NRI Institute of Technology</h4>
+                            <span class="subtitle">Bachelors in computer science
+
+                            </span>
+
+                            <div class="calender">
+                                <i class="calender-alt">Jun 2018 – Apr 2022
+
+                                </i>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="rounder"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="skills">
+
+        <div class="skills_header" id="skills_header"><!-- it is a flex-->
+        </div>
+
+        <div class="title">
+            <strong>Skills</strong>
+        </div>
+
+        <div class="skills_body">
+
+            <div class="Languages">
+
+                <div class="skill_title">
+                    <b>Programming Languages</b>
+                </div>
+
+                <div class="PL_skills">
+                    <P>Python</P>
+                    <P>R Programming</P>
+                    <P>Java</P>
+                    <P>HTML & CSS</P>
+                    <P>JavaScript</P>
+                </div>
+
+            </div>
+
+            <div class="Analytics_and_Visual">
+                <div class="skill_title">
+                    <b>Analytics and Visualization</b>
+                </div>
+
+                <div class="AV_skills">
+                    <p>MS Excel</p>
+                    <p>Postgre SQL</p>
+                    <p>Power BI</p>
+                    <p>MySQL</p>
+                    <p>Tableau</p>
+                    <p>Microsoft SQL Server</p>
+                    <p>Informatica</p>
+                    <p>Mongo DB</p>
+                    <p>Alteryx</p>
+                    <p>Oracle DB</p>
+
+                </div>
+            </div>
+
+            <div class="Project_tools">
+                <div class="skill_title">
+                    <b>Project Management Tools</b>
+                </div>
+                <div class="PMT_skills">
+                    <p>AWS</p>
+                    <p>Collibra</p>
+                    <p>JIRA</p>
+                    <p>Microsoft Project</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="projects">
+        <div class="projects_header" id="projects_header"><!-- it is a flex-->
+        </div>
+
+        <div class="title"><strong>Projects</strong></div>
+
+        <div class="projects_body">
+
+            <div class="samplecard">
+                <div class="image">
+                    <img src="Unicorn_analysis.png" alt="">
+                </div>
+
+                <div class="project_title">
+                    <b>Unicorn Companies Analysis</b>
+
+                </div>
+                <div>
+                    <small>| Microsoft Excel |</small>
+                    <small>| Power BI |</small>
+                    <small>| R |</small>
+                    <small>| Rpubs |</small>
+                    <small>| R Markdown |</small>
+                </div>
+
+                <div class="Project_info">
+                    <p>
+                        Developed a dynamic Power BI dashboard to analyze the global landscape of unicorn companies,
+                        integrating data from 1,074 unicorns spanning 47 countries and 16 industries. Utilized R for
+                        sector-wise analysis, revealing Fintech and Internet Software & Services as prominent with 224
+                        and 205 unicorns respectively. Identified North America as the primary region with 589 unicorns,
+                        highlighting significant tech hubs like Silicon Valley and key cities in China and Europe.
+
+                    </p>
+                    <br>
+                    <a href="https://github.com/Kundana9368/unicorn" target="_blank">Read more</a>
+                </div>
+            </div>
+
+            <div class="samplecard">
+                <div class="image">
+                    <img src="twitter_analysis.png" alt="">
+                </div>
+
+                <div class="project_title">
+                    <b>Twitter Sentiment Analysis</b>
+                </div>
+                <div>
+                    <small>| Logistic Regression |</small>
+                    <small>| Random Forest |</small>
+                    <small>| Stemming |</small>
+                    <small>| TF-IDF |</small>
+                    <small>|Python|</small>
+                </div>
+
+                <div class="Project_info">
+                    <p>
+                        Developed a robust sentiment analysis model to classify the sentiments of 1.6 million tweets
+                        using Python and NLP techniques. Comprehensive text preprocessing included stopwords removal,
+                        stemming, and TF-IDF vectorization. Implemented Logistic Regression, achieving a test accuracy
+                        of 77.67%, and Random Forest, with a test accuracy of 77.49% and a training accuracy of 99.58%,
+                        providing valuable feature importance insights. Ensured model scalability and reusability by
+                        saving trained models with pickle and conducted successful deployment tests for real-time
+                        tweet classification.
+
+                    </p>
+                    <br>
+                    <a href="https://github.com/Kundana9368/twitter_sentiment_analysis" target="_blank">Read more</a>
+                </div>
+            </div>
+
+            <div class="samplecard">
+                <div class="image">
+                    <img src="layoffs_analysis.png" alt="">
+                </div>
+
+                <div class="project_title">
+                    <b>Layoff Analysis Around the World Post-COVID</b>
+
+                </div>
+                <div>
+                    <small>| Python |</small>
+                    <small>| Tableau |</small>
+                </div>
+
+                <div class="Project_info">
+                    <p>
+                        Created an interactive dashboard to analyze global layoffs post-COVID, integrating Python for
+                        data collection and cleaning. Tracked trends since the pandemic's onset, predicting a 42%
+                        reduction in job losses from 260,000 in 2023 to 151,681 in 2024. Conducted predictive modeling
+                        to forecast 2024 layoff trends, highlighting top companies like Amazon, Meta, and Google, and
+                        quantifying post-layoff savings for Netflix and Uber.
+
+                    </p>
+                    <br>
+                    <a href="https://github.com/Kundana9368/Layoff_Analysis_Post_Covid" target="_blank">Read more</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="projects_body">
+
+            <div class="samplecard">
+                <div class="image">
+                    <img src="Library.png" alt="">
+                </div>
+
+                <div class="project_title">
+                    <b> Library Management System </b>
+
+                </div>
+                <div>
+
+                    <small>| HTML |</small>
+                    <small>| CSS |</small>
+                    <small>| JavaScript |</small>
+                    <small>| PHP |</small>
+                </div>
+
+                <div class="Project_info">
+                    <p>
+                        The Library Management System is a web-based application designed to automate the library
+                        operations. It facilitates the interaction between librarians (admins) and library patrons
+                        (students), providing a seamless experience for managing books, fines, and borrowing activities.
+
+                    </p>
+                    <br>
+                    <a href="https://github.com/Kundana9368/Library_Management_System/tree/main" target="_blank">Read
+                        more</a>
+                </div>
+            </div>
+
+            <div class="samplecard">
+                <div class="image">
+                    <img src="e_voting.png" alt="">
+                </div>
+
+                <div class="project_title">
+                    <b> E-Voting using Face Recognition </b>
+
+                </div>
+                <div>
+
+                    <small>| HTML |</small>
+                    <small>| CSS |</small>
+                    <small>| JavaScript |</small>
+                    <small>| PHP |</small>
+                </div>
+
+                <div class="Project_info">
+                    <p>
+                        I developed an innovative e-voting system using face recognition and the K-Nearest Neighbors
+                        (KNN) model for secure vote casting, with backend development and machine learning integration
+                        in Python. Utilizing databases for efficient data management and secure voter information
+                        storage, I created an intuitive user interface and employed Agile methodologies for project
+                        management. I also ensured the accuracy and integrity of voter information through meticulous
+                        data collection and communicated progress and benefits to stakeholders through presentations.
+                    </p>
+                    <br>
+                    <a href="https://github.com/Kundana9368/Library_Management_System/tree/main" target="_blank">Read
+                        more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="contact">
+        <div class="contact_header" id="contact_header"><!-- it is a flex-->
+        </div>
+
+        <div class="title">
+            <strong>Feel Free to Reach Me</strong>
+        </div>
+
+
+        <div class="contact_body">
+
+            <div class="contact_social_links">
+                <h1>Kundana Mandapaka</h1>
+                <p>Data Analyst</p>
+                <br>
+
+                <p><b>Email:</b> <br>
+                    Kundana.mandapaka@gmail.com</p>
+
+                <div class="card">
+                    <a class="social-link1" href="https://github.com/Kundana9368" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="1em" viewBox="0 0 496 512">
+                            <path
+                                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="social-link2" href="http://www.linkedin.com/in/kundanamandapaka" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#fff">
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                            </path>
+                        </svg> </a>
+
+                    <a class="social-link4" href="https://leetcode.com/u/kundanamandapaka/" target="_blank">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"
+                            id="Leetcode">
+                            <path
+                                d="M22,14.355c0-0.742-0.564-1.346-1.26-1.346H10.676c-0.696,0-1.26,0.604-1.26,1.346s0.563,1.346,1.26,1.346H20.74C21.436,15.702,22,15.098,22,14.355z"
+                                fill="#ffffff" class="color000000 svgShape"></path>
+                            <path
+                                d="M3.482,18.187l4.313,4.361C8.768,23.527,10.113,24,11.598,24c1.485,0,2.83-0.512,3.805-1.494l2.588-2.637c0.51-0.514,0.492-1.365-0.039-1.9c-0.531-0.535-1.375-0.553-1.884-0.039l-2.676,2.607c-0.462,0.467-1.102,0.662-1.809,0.662s-1.346-0.195-1.81-0.662l-4.298-4.363c-0.463-0.467-0.696-1.15-0.696-1.863c0-0.713,0.233-1.357,0.696-1.824l4.285-4.38c0.463-0.467,1.116-0.645,1.822-0.645s1.346,0.195,1.809,0.662l2.676,2.606c0.51,0.515,1.354,0.497,1.885-0.038c0.531-0.536,0.549-1.387,0.039-1.901l-2.588-2.636c-0.649-0.646-1.471-1.116-2.392-1.33l-0.034-0.007l2.447-2.503c0.512-0.514,0.494-1.366-0.037-1.901c-0.531-0.535-1.376-0.552-1.887-0.038L3.482,10.476C2.509,11.458,2,12.813,2,14.311C2,15.809,2.509,17.207,3.482,18.187z"
+                                fill="#ffffff" class="color000000 svgShape"></path>
+                        </svg>
+
+                    </a>
+
+                    <a class="social-link5" href="https://public.tableau.com/app/profile/kundana.mandapaka/vizzes"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 -2.5 256 256"
+                            id="tableau">
+                            <path fill="#ffffff"
+                                d="M123.929 11.593v11.641h-20.82v7.571h20.82v23.186h8.139V30.805h21.341v-7.571h-21.341V0h-8.139z"
+                                class="color7099a6 svgShape"></path>
+                            <path fill="#8b8b8b"
+                                d="M55.884 41.121v16.893H24.369v10.599h31.515v34.307h11.688V68.613H99.56V58.014H67.572V24.228H55.884z"
+                                class="coloreb912c svgShape"></path>
+                            <path fill="#7a7a7a"
+                                d="M187.953 41.121v16.893h-31.515v11.12h31.515v33.786h12.161V69.134h31.514v-11.12h-31.514V24.228h-12.161z"
+                                class="color59879b svgShape"></path>
+                            <path fill="#8a8a8a"
+                                d="M120.901 98.661v18.928H85.837v14.101h35.064v37.855h14.196V131.69h35.063v-14.101h-35.063V79.733h-14.196z"
+                                class="colore8762c svgShape"></path>
+                            <path fill="#767676"
+                                d="M224.01 108.219v11.878h-21.341v9.605h21.341v23.707h10.647v-23.707h21.341v-9.605h-21.341V96.39H224.01z"
+                                class="color5b6591 svgShape"></path>
+                            <path fill="#ffffff"
+                                d="M20.821 109.26v11.357H0v8.044h20.821v22.714h8.138v-22.714l21.341-.757v-7.287H28.959V97.904h-8.138z"
+                                class="color7099a6 svgShape"></path>
+                            <path fill="#737373"
+                                d="M55.884 162.731v16.893H24.369v11.12h31.515v33.786h12.161v-33.786H99.56v-11.12H68.045v-33.786H55.884z"
+                                class="colorc72035 svgShape"></path>
+                            <path fill="#4e4e4e"
+                                d="M187.953 162.731v16.893h-31.515v10.6h31.515v34.306h12.161v-34.306h31.514v-10.6h-31.514v-33.786h-12.161z"
+                                class="color1f447e svgShape"></path>
+                            <path fill="#767676"
+                                d="M122.936 205.65v11.83h-21.341v9.606h21.341v23.707h10.647v-23.707h21.341v-9.606h-21.341v-23.707h-10.647z"
+                                class="color5b6591 svgShape"></path>
+                        </svg>
+                    </a>
+
+
+                    <a href="Kundana_Mandapaka_Resume.pdf" class="social-link3" download="Kundana_Mandapaka_Resume.pdf"
+                        id="downloadLink">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#FFFFFF">
+                            <path
+                                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z" />
+                        </svg>
+                    </a>
+
+
+
+
+                </div>
+            </div>
+
+            <div class="contact_form" id="contact_form">
+                <form action="https://api.web3forms.com/submit" method="POST">
+
+                    <input type="hidden" name="access_key" value="563828ba-5717-40c5-b7ae-10971d035158">
+
+                    <label for="input_name">Name:</label>
+                    <input type="text" autocomplete="off" name="text" onclick="input()" id="input_name"
+                        class="input_name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" autocomplete="off" name="text" onclick="input()" class="email" required>
+
+                    <label for="comment">Comment:</label>
+                    <input type="text" autocomplete="off" name="text" onclick="input()" class="comment" required>
+
+                    <button type="submit" class="btn-24"><span>Submit</span></button>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+
+    </footer>
+
+
+    <script>
+        function sidebaropen() {
+            const sidebar = document.querySelector('.sidebar')
+            const sidebaropen = document.querySelector('.sidebaropen')
+            sidebar.style.display = 'flex';
+            sidebaropen.style.display = 'none';
+        }
+
+        function sidebarclose() {
+            const sidebar = document.querySelector('.sidebar');
+            const sidebaropen = document.querySelector('.sidebaropen')
+
+            sidebar.style.display = 'none';
+            sidebaropen.style.display = 'flex';
+        }
+
+        function contactheader() {
+            document.getElementById('contact_form').scrollIntoView({ behavior: 'smooth' });
+        }
+
+
+        document.getElementById('emailForm').addEventListener('submit', function (event) {
+            var emailInput = document.getElementById('email');
+            var errorSpan = document.getElementById('error');
+
+            if (!validateEmail(emailInput.value)) {
+                event.preventDefault();
+                errorSpan.style.display = 'inline';
+            } else {
+                errorSpan.style.display = 'none';
+            }
+        });
+
+        function validateEmail(email) {
+            // Basic email pattern
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return emailPattern.test(email);
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>
