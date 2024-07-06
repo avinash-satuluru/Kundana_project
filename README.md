@@ -19,4 +19,4 @@ You can view the live demo of the portfolio (#https://kundana9368.github.io/Port
 - **JavaScript**: Adding interactivity and handling user events.
 - **Google Fonts**: For stylish and readable typography.
 
-Thank you for checking out my responsive portfolio project!
+
